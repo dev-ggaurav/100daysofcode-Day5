@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* Globals */
+
+*{
+    margin:0;
+    padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size:10px;
+}
+
+:root{
+    --blue:hsl(223, 87%, 63%);
+    --pale-blue:hsl(223, 100%, 88%);
+    --light-red:hsl(354, 100%, 66%);
+    --grey:hsl(0, 0%, 59%);
+    --very-dark-blue:hsl(209, 33%, 12%);
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    padding: 3rem 2rem;
+    text-align: center;
+    font-family: Libre Franklin,sans-serif;
+}
+
+a{
+	text-decoration:none;
+}
+
+/* Header */
+
+.logo{
+    width: 10rem;
+    margin: 3.5rem 0;
+}
+
+
+/* Main */
+
+h1{
+    padding-bottom: 1.2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--grey);
+    
+}
+
+span{
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+main p{
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--very-dark-blue);
+}
+
+/* Form elements */
+
+#email{
+    padding:1.5rem 2.2rem;
+    border: 1px solid var(--pale-blue);
+    border-radius: 5rem;
+    margin: 1rem 0;
+}
+
+button{
+    padding:1.5rem 2.2rem;
+    border: none;
+    border-radius:5rem;
+    background-color: var(--blue);
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder{
+    color: var(--pale-blue);
+}
+
+
+/* Illustration */
+
+.hero-img{
+    max-width: 72rem;
+    margin: 5.5rem auto 0;
+}
+
+.hero-img img{
+    max-width: 100%;
+
+}
+
+/* Footer */
+
+.social{
+    margin: 3rem 0;
+}
+
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+li a{
+    margin: 1rem;
+    color: var(--blue);
+ 
+}
+
+li i {
+    border: 1px solid hsla(0, 1%, 53%, 0.37);;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 6px;
+}
+
+li i:hover{
+    color: white;
+    background-color: var(--blue);
+}
+
+.copyright{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--grey);
+}
+
+.attribution {
+     font-size: 11px;
+     text-align: center;
+     padding: 2rem;
+ }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* Media Queries for desktop */
+
+@media only screen and (min-width: 550px) {
+    body {
+        padding:1rem 5rem;
+    }
+
+    h1{
+        font-size: 3.6rem;
+    }
+
+    main p{
+        font-size: 1.5rem;
+    }
+
+    form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #email{
+        margin: 0;
+        width: 50rem;
+        font-size: 1.5rem;
+    }
+
+    button{
+        font-size: 1.5rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .hero-img{
+        justify-content: center;
+        align-items: center;
+    }
+
+    }
+  
